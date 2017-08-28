@@ -1,0 +1,82 @@
+{
+  "intents": [
+    {
+      "name": "AMAZON.CancelIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.HelpIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.StartOverIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.StopIntent",
+      "samples": []
+    },
+    {
+      "name": "ChangeModeIntent",
+      "samples": [
+        "set gear to {NextMode}",
+        "put me in {NextMode} gear",
+        "change gear to {NextMode}",
+        "change to {NextMode} gear",
+        "{NextMode}",
+        "{NextMode} gear",
+        "shift to {NextMode} gear",
+        "shift in to {NextMode} gear",
+        "shift to {NextMode}"
+      ],
+      "slots": [
+        {
+          "name": "NextMode",
+          "type": "LIST_OF_MODES",
+          "samples": []
+        }
+      ]
+    },
+    {
+      "name": "GetModeIntent",
+      "samples": [
+        "get gear",
+        "tell me the gear",
+        "what gear am I in",
+        "what gear I am in",
+        "current gear",
+        "which gear",
+        "what gear"
+      ],
+      "slots": []
+    }
+  ],
+  "types": [
+    {
+      "name": "LIST_OF_MODES",
+      "values": [
+        {
+          "id": null,
+          "name": {
+            "value": "first",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "second",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "third",
+            "synonyms": []
+          }
+        }
+      ]
+    }
+  ]
+}
